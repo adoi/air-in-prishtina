@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { PollutionService } from '../../services/pollution.service';
+import { PollutionModel } from '../../models/pollution.model';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  currentPollutionData: PollutionModel;
+
+  constructor(
+    private pollutionService: PollutionService
+  ) { }
 
   ngOnInit() {
+    this.pollutionService
+      .currentPollutionData
+      .subscribe(data => {
+        this.currentPollutionData = data;
+        console.log(this.currentPollutionData);
+      });
+    this.pollutionService.getPollutionData();
   }
-
 }

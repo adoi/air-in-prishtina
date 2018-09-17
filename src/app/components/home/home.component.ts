@@ -20,7 +20,6 @@ export class HomeComponent implements OnInit {
       .currentPollutionData
       .subscribe(data => {
         this.currentPollutionData = data;
-        console.log(this.currentPollutionData);
       });
     this.pollutionService.getPollutionData();
   }

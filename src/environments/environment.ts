@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  API_URL: 'https:/api.airvisual.com/v2/city?city=Pristina&state=Pristina&country=Kosovo&key=jQ9jLuPyuT74N3PA'
 };
 
 /*

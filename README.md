@@ -5,7 +5,7 @@ This is a small Angular project made for showcasing real-time data about the air
 ## Open Source
 The project is looking for new contributors. Please navigate to Issues section to see the enhancements the app needs to have. 
 
-## Setup (locally)
+## Setup 
 
 1.
 ```
@@ -21,3 +21,5 @@ npm i
 ```
 ng serve --o
 ```
+
+Developed by **[Adonis Murati](https://github.com/adoi)**
